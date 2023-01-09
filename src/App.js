@@ -58,10 +58,12 @@ function App() {
       </div>
       <div className="productbox">
         <img src={accesories} alt="error" />
-        <span
-          >Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
-          Solar Systems - Motors
-        </span>
+        <div className="accessoriesname">
+          <span
+            >Valves - Pumps - Pipes - IoT Drives & Controllers - Wires & Cables -
+            Solar Systems - Motors
+          </span>
+        </div>
       </div>
       <hr
         style={{height: "1.2px", border: 'none', backgroundColor: 'rgb(186, 39, 43)'}}
