@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  background: linear-gradient(white 0%, rgb(255, 249, 182) 45%);
+}
+/* navbox building */
+.navbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbox img {
+  width: 17rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* mainbox style */
+.mainbox {
+  /* overflow-x: hidden; */
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainbox .left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainbox .left img {
+  width: 62%;
+}
+/* right side box */
+.mainbox .right {
+  padding: 40px 27px;
+  width: 60%;
+}
+.mainbox .right h5 {
+  font-weight: bold;
+}
+/* rightbox list */
+.mainbox .right .list {
+  margin: 10px 30px;
+}
+.mainbox .right .list li {
+  font-size: 14px;
+  margin: 2px 0px;
+}
+
+/* right box image */
+.mainbox .right .mainimage {
+  width: 90%;
+}
+.mainbox .right .mainimage img {
+  width: 100%;
+}
+
+/* right box image caption */
+.caption {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* span text */
+
+.span_text {
+  margin: 0px 15px;
+  font-size: 12px;
+}
+
+/* product box */
+
+.productbox {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 25px;
+}
+.productbox img {
+  width: 80%;
+}
+.productbox span {
+  margin-top: 30px;
+}
+
+/* hr tag */
+hr {
+  height: 1.2px;
+  border: none;
+  background-color: rgb(186, 39, 43);
+  margin: 0px 15px;
+}
+/* productdescriptioin box */
+.productdiscriptionbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.productdiscriptionbox h5 {
+  margin: 20px;
+  text-align: center;
+}
+.productdiscriptionbox .product_texts {
+  text-align: center;
+}
+.productdiscriptionbox .product_texts span {
+  font-size: 14px;
+  border-right: 1px solid red;
+  padding: 0px 3px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(236, 50, 55);
+  margin: 10px;
+  height: 6rem;
+}
+footer .element {
+  margin-top: 15px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+footer .element img {
+  width: 20px;
+  filter: invert(1);
+}
+footer .element a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1085px) {
+  .navbox img {
+    width: 14rem;
   }
-  to {
-    transform: rotate(360deg);
+  .right h5 {
+    font-size: 12px;
+  }
+
+  .span_text {
+    font-size: 10px;
+  }
+  .mainbox .right h5 {
+    font-size: 10px;
+  }
+  .mainbox .right .list li {
+    font-size: 10px;
+  }
+  .caption {
+    font-size: 10px;
+  }
+  .productbox span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 900px) {
+  .productdiscriptionbox h5 {
+    font-size: 12px;
+  }
+  .span_text {
+    font-size: 7.2px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 650px) {
+  .span_text {
+    font-size: 6px;
+  }
+  .div_text{
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .mainbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainbox .left {
+    width: 100%;
+  }
+  .mainbox .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .span_text {
+    font-size: 5px;
+  }
+
+  .productdiscriptionbox .product_texts span {
+    font-size: 10px;
+  }
+  footer .element {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  footer .element img {
+    width: 12px;
+    margin-bottom: 2px;
+  }
+  footer .element {
+    font-size: 7px;
   }
 }
